@@ -21,7 +21,7 @@ def parse(api, url):
         save(data)
 
 def save(data):
-    with open("C:\\Users\\Andrew\\Desktop\\text.csv", "w", newline = '') as csv_file:
+    with open("C://Users//Andrew//Desktop//text.csv", "w", newline = '') as csv_file:
         write = csv.writer(csv_file, delimiter = " ")
         write.writerow("Name: " + data["title"])
         write.writerow((data["url"], data["railBioInfoItem"], data["railBioLinks"]))
